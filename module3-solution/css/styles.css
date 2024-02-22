@@ -1,0 +1,74 @@
+/* Custom styles */
+
+body {
+ margin: 10px;
+ padding: 5px;
+  background-color: #e7d5be;
+}
+
+.navbar-fixed-top {
+  position: absolute; /* Navbar scrolls away with the page */
+}
+
+.menu-section {
+  background-color: #c99c9c; /* Set background color */
+  padding:30px; /* Add padding for better readability */
+  margin: 10px; /* Add margin between sections */
+  border: 2px solid #4b0505; /* Add border for visual separation */
+  display: flex; /* Use flexbox to contain text within the section */
+  flex-direction: row; /* Stack child elements vertically */
+  align-items: center; /* Center text horizontally within the section */
+}
+
+.menu-section h3 {
+  text-align: center; /* Center section headings */
+  padding-bottom: 10px;
+  padding-top: 0;
+
+  
+}
+
+.back-to-top {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.back-to-top:hover {
+  color: #36349e;
+} 
+
+
+@media (min-width: 992px) {
+  .menu-section {
+    float: left;
+    width: calc(33.333333% - 40px); /* 3 columns with margin adjustment */
+    margin-right: 20px; /* Add margin between columns */
+  }
+  .menu-section:nth-child(3n) {
+    margin-right: 0; /* Remove margin for last column in each row */
+  }
+}
+
+/* Tablet view */
+@media (max-width: 991px) and (min-width: 768px) {
+  .menu-section {
+    float: left;
+    width: calc(50% - 50px); /* 2 columns with margin adjustment */
+    margin: 20px; /* Add margin between columns */
+    margin-top: 15px;
+  }
+  .menu-section:nth-child(2n) {
+    margin-right: 0; /* Remove margin for last column in each row */
+  }
+}
+
+
+@media (max-width: 767px) {
+  .menu-section {
+    float: none;
+    width: 100%; 
+  }
+}
+
