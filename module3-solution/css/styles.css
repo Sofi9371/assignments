@@ -1,31 +1,27 @@
-/* Custom styles */
-
 body {
- margin: 10px;
- padding: 5px;
+  margin: 20px;
+  padding: 5px;
   background-color: #e7d5be;
 }
 
 .navbar-fixed-top {
-  position: absolute; /* Navbar scrolls away with the page */
+  position: absolute;
 }
 
 .menu-section {
-  background-color: #c99c9c; /* Set background color */
-  padding:30px; /* Add padding for better readability */
-  margin: 10px; /* Add margin between sections */
-  border: 2px solid #4b0505; /* Add border for visual separation */
-  display: flex; /* Use flexbox to contain text within the section */
-  flex-direction: row; /* Stack child elements vertically */
-  align-items: center; /* Center text horizontally within the section */
+  background-color: #c99c9c;
+  padding: 30px;
+  margin: 20px;
+  border: 2px solid #4b0505;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .menu-section h3 {
-  text-align: center; /* Center section headings */
+  text-align: center;
   padding-bottom: 10px;
   padding-top: 0;
-
-  
 }
 
 .back-to-top {
@@ -37,38 +33,30 @@ body {
 
 .back-to-top:hover {
   color: #36349e;
-} 
-
+}
 
 @media (min-width: 992px) {
   .menu-section {
-    float: left;
-    width: calc(33.333333% - 40px); /* 3 columns with margin adjustment */
-    margin-right: 20px; /* Add margin between columns */
+    float: right;
+    width: calc(33.333333% - 40px);
+    margin-right: 20px;
   }
   .menu-section:nth-child(3n) {
-    margin-right: 0; /* Remove margin for last column in each row */
+    margin-right: 0;
   }
 }
 
-/* Tablet view */
 @media (max-width: 991px) and (min-width: 768px) {
   .menu-section {
     float: left;
-    width: calc(50% - 50px); /* 2 columns with margin adjustment */
-    margin: 20px; /* Add margin between columns */
-    margin-top: 15px;
-  }
-  .menu-section:nth-child(2n) {
-    margin-right: 0; /* Remove margin for last column in each row */
+    width: calc(50% - 50px);
+    margin: 20px;
   }
 }
-
 
 @media (max-width: 767px) {
   .menu-section {
     float: none;
-    width: 100%; 
+    width: 100%;
   }
 }
-
